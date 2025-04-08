@@ -1,0 +1,45 @@
+family,categories,origin,climate,name,water_category,venomous,size,ind_apartment,water_category_code,size_code
+Marantaceae,Hanging,Brazil,Tropical,Herringbone,weekly,0,small,1,2,2
+Arecaceae,Palm,Mexico,Tropical,Bella palm,weekly,0,small,1,2,2
+Araliaceae,Aralia,Asia,Tropical,Fabian Aralia,weekly,0,medium,1,2,1
+Liliaceae,Sansevieria,South Africa,Tropical,Snake plant,weekly,1,small,1,2,2
+Araceae,Philodendron,Central America,Tropical,Parlor ivy,weekly,1,small,1,2,2
+Arecaceae,Palm,Mexico,Tropical,Bella palm,weekly,0,small,1,2,2
+Arecaceae,Palm,Mexico,Tropical,Bamboo palm,weekly,0,medium,1,2,1
+Liliaceae,Dracaena,Mexico,Subtropical,Spineless yucca,7-10 days,1,big,0,1,0
+Euphorbiaceae,Cactus & Succulent,South Africa,Arid Tropical,Giant Candelabra tree,2-4 weeks,1,very big,0,0,3
+Malvaceae,Flower,Asia,Tropical,Chinese hibiscus,weekly,0,big,0,2,0
+Araceae,Philodendron,Venezuela,Tropical,Fernleaf Philodendron,weekly,1,big,0,2,0
+Araceae,Foliage plant,South Africa,Tropical,Zz plant,weekly,1,medium,1,2,1
+Polypodiaceae,Fern,Brazil,Tropical,Maindenhair,weekly,0,medium,1,2,1
+Piperaceae,Other,Venezuela,Tropical,Baby rubber plant,weekly,0,small,1,2,2
+Strelitziaceae,Foliage plant,South Africa,Subtropical,White bird of paradise,7-10 days,0,medium,1,1,1
+Crasssulaceae,Hanging,Mexico,Arid Tropical,Burro-tail,7-10 days,0,small,1,1,2
+Araceae,Philodendron,Brazil,Tropical,Lacy tree-philodendron,weekly,1,medium,1,2,1
+Agavaceae,Foliage plant,Mexico,Arid Tropical,Elephant foot,7-10 days,0,medium,1,1,1
+Arecaceae,Palm,Mexico,Tropical,Miniature fishtail,weekly,0,small,1,2,2
+Pteridaceae,Fern,Asia,Tropical humid,Silver Lace Fern,weekly,0,small,1,2,2
+Araceae,Anthurium,Ecuador,Tropical,Bronze Anthurium,weekly,1,small,1,2,2
+Crasssulaceae,Cactus & Succulent,South Africa,Subtropical arid,Jade Plant,2-4 weeks,0,small,1,0,2
+Amaryllidaceae,Cactus & Succulent,Mexico,Arid Tropical,Dragon-tree Agave,2-4 weeks,1,big,0,0,0
+Bromeliaceae,Bromeliad,Ecuador,Tropical humid,Pink quill,weekly,0,small,1,2,2
+Araceae,Philodendron,Central America,Tropical,Splitleaf Philodendron,weekly,1,medium,1,2,1
+Bromeliaceae,Bromeliad,Brazil,Tropical humid,Silver vase,weekly,0,medium,1,2,1
+Podocarpaceae,Foliage plant,Central Africa,Subtropical,African fern pine,7-10 days,0,big,0,1,0
+Araceae,Foliage plant,Colombia,Tropical,Indian kale,weekly,1,big,0,2,0
+Cactaceae,Cactus & Succulent,Central Mexico,Arid Tropical,Golden Barrel,2-4 weeks,0,big,0,0,0
+Arecaceae,Palm,Brazil,Tropical humid,Parrot palm,weekly,0,big,0,2,0
+Marantaceae,Foliage plant,Brazil,Tropical,Stromante,weekly,0,medium,1,2,1
+Dryopteridaceae,Fern,Asia,Subtropical,Holly-fern,7-10 days,0,medium,1,1,1
+Marantaceae,Foliage plant,Brazil,Tropical,Phrynium,weekly,0,medium,1,2,1
+Cactaceae,Cactus & Succulent,Brazil,Arid Tropical,Tree-Cereus,2-4 weeks,0,big,0,0,0
+Marantaceae,Hanging,Brazil,Tropical,Green prayer plant,weekly,0,small,1,2,2
+Liliaceae,Hanging,Central Africa,Tropical to subtropical,Spider plant,7-10 days,1,small,1,1,2
+Cactaceae,Cactus & Succulent,Brazil,Arid Tropical,Monster cactus,2-4 weeks,0,big,0,0,0
+Bromeliaceae,Bromeliad,Brazil,Subtropical,Coral berry,7-10 days,0,medium,1,1,1
+Apocynaceae,Flower,Brazil,Tropical,Golden Trumpet,weekly,1,big,0,2,0
+Aspleniaceae,Fern,Asia,Tropical humid,Birdnest fern,weekly,0,medium,1,2,1
+Marantaceae,Foliage plant,Brazil,Tropical,Velvet Calathea,weekly,0,small,1,2,2
+Amaryllidaceae,Cactus & Succulent,Mexico,Arid Tropical,Lilliput Agave,2-4 weeks,1,small,1,0,2
+Amaryllidaceae,Cactus & Succulent,Mexico,Arid Tropical,Thread Agave,2-4 weeks,1,small,1,0,2
+Amaryllidaceae,Cactus & Succulent,Mexico,Arid Tropical,Blue Agave,2-4 weeks,1,big,0,0,0
