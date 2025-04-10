@@ -37,7 +37,7 @@ Este projeto tem como objetivo analisar e classificar plantas de interior com ba
    - Visualizações das distribuições de famílias, categorias, climas e origens das plantas.
 
 2. **Plantas Populares**:
-   - Seleção de plantas originárias de países populares, como Brasil, México, Venezuela, entre outros.
+   - Seleção de plantas originárias de países populares, como Brasil, México, Venezuela, entre outros, com base em referências confiáveis.
 
 3. **Imagens**:
    - Exibição de imagens das plantas populares utilizando URLs fornecidas no dataset.
@@ -47,32 +47,36 @@ Este projeto tem como objetivo analisar e classificar plantas de interior com ba
      - `weekly`: Plantas tropicais e tropicais úmidas.
      - `7-10 days`: Outros climas.
      - `2-4 weeks`: Cactos e suculentas.
+   - Baseada em informações de horticultura sobre frequência de rega.
 
 5. **Plantas Venenosas**:
    - Identificação de plantas tóxicas para pets com base nas famílias conhecidas por toxicidade:
      - `Araceae`, `Euphorbiaceae`, `Liliaceae`, `Amaryllidaceae`, `Apocynaceae`.
+   - Referências incluem ASPCA, Pet Poison Helpline e estudos científicos.
 
----
-
-## Classificações
-
-1. **Tamanho das Plantas**:
+6. **Tamanho das Plantas**:
    - Classificação das plantas em:
      - `small`, `medium`, `big`, `very big`.
-   - Baseada em pesquisas e listas pré-definidas.
+   - Baseada em características botânicas e horticulturais.
 
-2. **Adequação para Apartamentos**:
+7. **Adequação para Apartamentos**:
    - Plantas pequenas e médias foram classificadas como adequadas (`ind_apartment = 1`).
 
-3. **Codificação de Categorias**:
-   - Codificação das categorias `water_category` e `size` para facilitar análises e uso em Machine Learning.
+8. **Solo Ideal**:
+   - Classificação do tipo de solo ideal para cada planta com base em sua família:
+     - Exemplos: `Sandy soils`, `Loamy soils`, `Peat soils`.
+
+9. **Luz Solar**:
+   - Classificação das necessidades de luz solar para cada planta com base em sua família:
+     - Exemplos: `Full sun`, `Partial shade`.
 
 ---
+
 
 ## Resultados
 
 - **Distribuições**:
-  - Gráficos de distribuição para categorias como frequência de rega, tamanhos, toxicidade e adequação para apartamentos.
+  - Gráficos de distribuição para categorias como frequência de rega, tamanhos, toxicidade, adequação para apartamentos, solo ideal, e luz solar necessária
 
 - **Exportação**:
   - Os dados tratados e classificados foram exportados para o arquivo `plants_cleaned.csv`.
@@ -86,6 +90,13 @@ Este projeto tem como objetivo analisar e classificar plantas de interior com ba
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/poisons/)
 - [NCBI - Toxicity of Plants Containing Calcium Oxalate Crystals](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10220692/)
 - [RHS - Potentially Harmful Garden Plants](https://www.rhs.org.uk/advice/profile?pid=524)
+- [RHS - Plant Finder](https://www.rhs.org.uk/plants)
+- [Missouri Botanical Garden - Plant Finder](https://www.missouribotanicalgarden.org/plantfinder/plantfindersearch.aspx)
+- [Gardening Know How - Plant Care](https://www.gardeningknowhow.com/)
+- [PictureThis - Plant Identification and Care](https://www.picturethisai.com/)
+- [Wekiva Foliage - Watering Schedule](https://www.wekivafoliage.com/blogs/plant-care/how-to-create-a-watering-schedule-for-your-indoor-plants)
+- [Revista Casa e Jardim - Plantas Populares no Brasil](https://revistacasaejardim.globo.com/paisagismo/noticia/2020/09/15-plantas-mais-populares-no-google-em-2020-e-dicas-de-cuidados.ghtml)
+- [PictureThis - Plantas Populares no Brasil](https://www.picturethisai.com/region/Brazil.html)
 
 ---
 
