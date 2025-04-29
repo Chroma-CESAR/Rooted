@@ -21,7 +21,7 @@ Miniature fishtail,1,small,1,2,Experienced,High
 Silver Lace Fern,1,small,1,2,Amateur,Medium
 Bronze Anthurium,0,small,1,2,Amateur,Medium
 Jade Plant,1,small,1,2,Experienced,Medium
-Dragon-tree Agave,0,big,0,0,Amateur,Medium
+Dragon-tree Agave,0,big,0,0,Amateur,Low
 Pink quill,1,small,1,2,Amateur,High
 Splitleaf Philodendron,0,medium,1,1,Amateur,Medium
 Silver vase,1,medium,1,1,Amateur,High
@@ -30,7 +30,7 @@ Indian kale,0,big,0,0,Amateur,Medium
 Golden Barrel,1,big,0,0,Experienced,Medium
 Parrot palm,1,big,0,0,Experienced,High
 Stromante,1,medium,1,1,Amateur,Medium
-Holly-fern,1,medium,1,1,Amateur,Medium
+Holly-fern,1,medium,1,1,Amateur,Low
 Phrynium,1,medium,1,1,Amateur,Medium
 Tree-Cereus,1,big,0,0,Experienced,Medium
 Green prayer plant,1,small,1,2,Amateur,Medium
@@ -40,6 +40,6 @@ Coral berry,1,medium,1,1,Amateur,Medium
 Golden Trumpet,0,big,0,0,Experienced,High
 Birdnest fern,1,medium,1,1,Amateur,Medium
 Velvet Calathea,1,small,1,2,Amateur,Medium
-Lilliput Agave,0,small,1,2,Amateur,Medium
-Thread Agave,0,small,1,2,Amateur,Medium
-Blue Agave,0,big,0,0,Amateur,Medium
+Lilliput Agave,0,small,1,2,Amateur,Low
+Thread Agave,0,small,1,2,Amateur,Low
+Blue Agave,0,big,0,0,Amateur,Low
