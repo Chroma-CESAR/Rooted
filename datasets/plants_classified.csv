@@ -1,0 +1,45 @@
+ind_pets,ind_apartment,size_code,experience_level_code,disponibility_level_code,kmeans_group,name,group_name
+1.0,1.0,0.0,0.0,0.0,1,Herringbone,Companhia Segura
+1.0,1.0,0.0,1.0,1.0,2,Bella palm,Domínio Verde
+1.0,1.0,0.3333333333333333,0.0,0.0,1,Fabian Aralia,Companhia Segura
+0.0,1.0,0.0,0.5,1.0,0,Snake plant,Miniaturas Tóxicas
+0.0,1.0,0.0,0.5,0.0,0,Parlor ivy,Miniaturas Tóxicas
+1.0,1.0,0.0,1.0,1.0,2,Bella palm,Domínio Verde
+1.0,1.0,0.3333333333333333,1.0,1.0,2,Bamboo palm,Domínio Verde
+0.0,0.0,0.6666666666666666,0.5,0.5,4,Spineless yucca,Majestade Tóxica
+0.0,0.0,1.0,1.0,0.0,4,Giant Candelabra tree,Majestade Tóxica
+1.0,0.0,0.6666666666666666,0.5,1.0,3,Chinese hibiscus,Guardião Natural
+0.0,0.0,0.6666666666666666,0.5,0.0,4,Fernleaf Philodendron,Majestade Tóxica
+0.0,1.0,0.3333333333333333,0.5,0.0,0,Zz plant,Miniaturas Tóxicas
+1.0,1.0,0.3333333333333333,0.0,0.0,1,Maindenhair,Companhia Segura
+1.0,1.0,0.0,0.0,0.0,1,Baby rubber plant,Companhia Segura
+1.0,1.0,0.3333333333333333,0.5,0.5,1,White bird of paradise,Companhia Segura
+1.0,1.0,0.0,1.0,0.5,2,Burro-tail,Domínio Verde
+0.0,1.0,0.3333333333333333,0.5,0.0,0,Lacy tree-philodendron,Miniaturas Tóxicas
+1.0,1.0,0.3333333333333333,1.0,0.5,2,Elephant foot,Domínio Verde
+1.0,1.0,0.0,1.0,1.0,2,Miniature fishtail,Domínio Verde
+1.0,1.0,0.0,0.0,0.0,1,Silver Lace Fern,Companhia Segura
+0.0,1.0,0.0,0.5,0.0,0,Bronze Anthurium,Miniaturas Tóxicas
+1.0,1.0,0.0,1.0,0.0,1,Jade Plant,Companhia Segura
+0.0,0.0,0.6666666666666666,0.0,0.0,4,Dragon-tree Agave,Majestade Tóxica
+1.0,1.0,0.0,0.5,0.5,1,Pink quill,Companhia Segura
+0.0,1.0,0.3333333333333333,0.5,0.0,0,Splitleaf Philodendron,Miniaturas Tóxicas
+1.0,1.0,0.3333333333333333,0.5,0.5,1,Silver vase,Companhia Segura
+1.0,0.0,0.6666666666666666,1.0,0.0,3,African fern pine,Guardião Natural
+0.0,0.0,0.6666666666666666,0.5,0.0,4,Indian kale,Majestade Tóxica
+1.0,0.0,0.6666666666666666,1.0,0.0,3,Golden Barrel,Guardião Natural
+1.0,0.0,0.6666666666666666,1.0,1.0,3,Parrot palm,Guardião Natural
+1.0,1.0,0.3333333333333333,0.0,0.0,1,Stromante,Companhia Segura
+1.0,1.0,0.3333333333333333,0.5,0.0,1,Holly-fern,Companhia Segura
+1.0,1.0,0.3333333333333333,0.0,0.0,1,Phrynium,Companhia Segura
+1.0,0.0,0.6666666666666666,1.0,0.0,3,Tree-Cereus,Guardião Natural
+1.0,1.0,0.0,0.0,0.0,1,Green prayer plant,Companhia Segura
+0.0,1.0,0.0,0.5,0.5,0,Spider plant,Miniaturas Tóxicas
+1.0,0.0,0.6666666666666666,1.0,0.0,3,Monster cactus,Guardião Natural
+1.0,1.0,0.3333333333333333,0.5,0.0,1,Coral berry,Companhia Segura
+0.0,0.0,0.6666666666666666,1.0,1.0,4,Golden Trumpet,Majestade Tóxica
+1.0,1.0,0.3333333333333333,0.0,0.0,1,Birdnest fern,Companhia Segura
+1.0,1.0,0.0,0.0,0.0,1,Velvet Calathea,Companhia Segura
+0.0,1.0,0.0,0.0,0.0,0,Lilliput Agave,Miniaturas Tóxicas
+0.0,1.0,0.0,0.0,0.0,0,Thread Agave,Miniaturas Tóxicas
+0.0,0.0,0.6666666666666666,0.0,0.0,4,Blue Agave,Majestade Tóxica
