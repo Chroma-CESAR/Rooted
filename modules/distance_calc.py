@@ -3,12 +3,9 @@ from scipy.spatial.distance import cdist
 import pickle
 
 
-with open('./pickles/scaler.pkl', 'rb') as file:
-    scaler = pickle.load(file)
 
-
-
-def calculate_distances(new_user_data, data_grouped):
+def calculate_distances(new_user_data, data_grouped, scaller_local):
+        
     """
     Calcula as distâncias entre um novo usuário e as plantas existentes e retorna o ranking das 4 plantas mais próximas.
 
@@ -20,6 +17,9 @@ def calculate_distances(new_user_data, data_grouped):
     Returns:
         pd.DataFrame: Ranking das 4 plantas mais próximas com informações de compatibilidade.
     """
+    
+    with open(scaller_local, 'rb') as file:
+        scaler = pickle.load(file)
    
     new_user = pd.DataFrame([new_user_data])
     new_user_normalized = scaler.transform(new_user)
@@ -60,6 +60,6 @@ new_user_data = {
 data_grouped = pd.read_csv('./datasets/results/plants_grouped.csv') 
 
 
-ranking = calculate_distances(new_user_data, data_grouped)
+ranking = calculate_distances(new_user_data, data_grouped, './pickles/scaler.pkl')
 print(ranking)
 """
