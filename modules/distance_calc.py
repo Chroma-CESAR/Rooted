@@ -1,52 +1,59 @@
 import pandas as pd
 from scipy.spatial.distance import cdist
 import pickle
+from dataclasses import dataclass
+
+
+@dataclass
+class PlantRanking:
+    distance: float
+    plant_index: int
+    plant_name: str
+    group: str
+    compatibility: float
 
 
 
-def calculate_distances(new_user_data, data_grouped, scaller_local):
-        
-    """
-    Calcula as distâncias entre um novo usuário e as plantas existentes e retorna o ranking das 4 plantas mais próximas.
-
-    Args:
-        new_user_data (dict): Dados do novo usuário no formato de dicionário.
-        data_distances (pd.DataFrame): Dados normalizados das plantas existentes.
-        data_grouped (pd.DataFrame): Dados agrupados das plantas com informações adicionais.
-
-    Returns:
-        pd.DataFrame: Ranking das 4 plantas mais próximas com informações de compatibilidade.
-    """
-    
+def calculate_distances(new_user_data, data_complete, scaller_local):     
     with open(scaller_local, 'rb') as file:
         scaler = pickle.load(file)
-   
+    
+    data = data_complete[['ind_pets', 'ind_apartment', 'size_code', 'experience_level_code', 'disponibility_level_code']]
+    
     new_user = pd.DataFrame([new_user_data])
     new_user_normalized = scaler.transform(new_user)
 
-    data_distances = data_grouped.drop(columns=['kmeans_group', 'name', 'group_name'])
 
-    distances = cdist(new_user_normalized, data_distances, metric='euclidean')
-
+    distances = cdist(new_user_normalized, data, metric='euclidean')
 
     distances_df = pd.DataFrame(distances.T, columns=['Distance'])
-    distances_df['Plant Index'] = data_distances.index
-    distances_df['Plant Name'] = data_grouped.loc[data_distances.index, 'name'].values
-    distances_df['Group'] = data_grouped.loc[data_distances.index, 'group_name'].values
+    distances_df['Plant Index'] = data.index
+    distances_df['Plant Name'] = data_complete.loc[data_complete.index, 'name'].values
+    distances_df['Group'] = data_complete.loc[data_complete.index, 'group_name'].values
+
+    distances_df['Compatibility Percentage'] = round(100 - (distances_df['Distance'] / distances_df['Distance'].max() * 100), 0)
+    distances_df = distances_df.sort_values(by='Compatibility Percentage', ascending=False).head(4)
+
+    ranking  = []
+    for i in range(len(distances_df)):
+        if distances_df['Compatibility Percentage'].iloc[i] > 0:
+            plants = PlantRanking(
+                distance=distances_df['Distance'].iloc[i],
+                plant_index=distances_df['Plant Index'].iloc[i],
+                plant_name=distances_df['Plant Name'].iloc[i],
+                group=distances_df['Group'].iloc[i],
+                compatibility=distances_df['Compatibility Percentage'].iloc[i]
+            )
+            ranking.append(plants)
 
 
-    distances_df['Compatibility Percentage'] = round(
-        100 - (distances_df['Distance'] / distances_df['Distance'].max() * 100), 0
-    )
-
-
-    return distances_df.sort_values(by='Distance').head(4)
+    return plants
 
 
 
 
-"""
-# Exemplo de uso da função
+""""
+Exemplo de uso da função
 
 new_user_data = {
     'ind_pets': 0,
@@ -57,9 +64,9 @@ new_user_data = {
 }
 
 
-data_grouped = pd.read_csv('./datasets/results/plants_grouped.csv') 
+data_grouped = pd.read_csv('./datasets/results/plants_complete.csv') 
+pickle_file = './pickles/scaler.pkl'
 
-
-ranking = calculate_distances(new_user_data, data_grouped, './pickles/scaler.pkl')
+ranking = calculate_distances(new_user_data, data_grouped, pickle_file)
 print(ranking)
 """
