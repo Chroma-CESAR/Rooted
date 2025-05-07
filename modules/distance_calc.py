@@ -11,13 +11,14 @@ class PlantRanking:
     plant_name: str
     group: str
     compatibility: float
+    image: str
 
 
-
-def calculate_distances(new_user_data, data_complete, scaller_local):     
+def calculate_distances(new_user_data, scaller_local):     
     with open(scaller_local, 'rb') as file:
         scaler = pickle.load(file)
     
+    data_complete = pd.read_csv('./datasets/results/plants_complete.csv')
     data = data_complete[['ind_pets', 'ind_apartment', 'size_code', 'experience_level_code', 'disponibility_level_code']]
     
     new_user = pd.DataFrame([new_user_data])
@@ -30,6 +31,7 @@ def calculate_distances(new_user_data, data_complete, scaller_local):
     distances_df['Plant Index'] = data.index
     distances_df['Plant Name'] = data_complete.loc[data_complete.index, 'name'].values
     distances_df['Group'] = data_complete.loc[data_complete.index, 'group_name'].values
+    distances_df['Image'] = data_complete.loc[data_complete.index, 'img_url'].values
 
     distances_df['Compatibility Percentage'] = round(100 - (distances_df['Distance'] / distances_df['Distance'].max() * 100), 0)
     distances_df = distances_df.sort_values(by='Compatibility Percentage', ascending=False).head(4)
@@ -42,12 +44,14 @@ def calculate_distances(new_user_data, data_complete, scaller_local):
                 plant_index=distances_df['Plant Index'].iloc[i],
                 plant_name=distances_df['Plant Name'].iloc[i],
                 group=distances_df['Group'].iloc[i],
-                compatibility=distances_df['Compatibility Percentage'].iloc[i]
+                compatibility=distances_df['Compatibility Percentage'].iloc[i],
+                image=distances_df['Image'].iloc[i]
+                
             )
             ranking.append(plants)
 
 
-    return plants
+    return ranking
 
 
 
