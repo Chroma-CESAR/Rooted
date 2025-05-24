@@ -86,6 +86,19 @@ Este notebook complementa o `base.ipynb` ao aplicar técnicas de machine learnin
 
 ---
 
+## Codificações Importantes
+
+| Coluna                     | Valores Possíveis       | Descrição                              |
+|----------------------------|-------------------------|----------------------------------------|
+| `ind_apartment`            | 0 ou 1                 | Indica se a planta é adequada para apartamentos (0 = Não, 1 = Sim). |
+| `ind_pet`                  | 0 ou 1                 | Indica se a planta é segura para pets (0 = Não, 1 = Sim).           |
+| `size_code`                | 0, 1, 2, 3             | Tamanho da planta (0 = Small, 1 = Medium, 2 = Big, 3 = Very Big).   |
+| `experience_level_code`    | 0, 1, 2                | Nível de experiência necessário (0 = Beginner, 1 = Amateur, 2 = Experienced). |
+| `disponibility_level_code` | 0, 1, 2                | Nível de disponibilidade necessário (0 = Low, 1 = Medium, 2 = High). |
+
+
+
+
 ## Como Executar
 
 1. Certifique-se de ter o Python instalado.
