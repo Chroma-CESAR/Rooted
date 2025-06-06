@@ -2,6 +2,9 @@
 
 Este projeto tem como objetivo analisar e classificar plantas de interior com base em diferentes características, como origem, clima, frequência de rega, toxicidade e adequação para apartamentos. A análise foi realizada utilizando um conjunto de dados de plantas, com etapas de tratamento, visualização e classificação.
 
+- Frontend: https://github.com/Chroma-CESAR/indoorPlants-frontend
+- Backend: https://github.com/Chroma-CESAR/IndoorPlants-backend
+
 ---
 
 ## Estrutura do Projeto
